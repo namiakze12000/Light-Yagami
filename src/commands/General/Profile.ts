@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://wallpaperaccess.com/full/5304840.png'
+                'https://worldofpcgames.co/wp-content/uploads/2022/04/Touch-Some-Grass-Free-Download-By-Worldofpcgames.jpg'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
@@ -86,7 +86,7 @@ export default class Command extends BaseCommand {
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://wallpaperaccess.com/full/5304840.png'
+                    'https://wallup.net/wp-content/uploads/2019/09/08/776156-death-note-light-yagami-748x426.jpg'
             ),
             MessageType.image,
             undefined,
