@@ -7,8 +7,8 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             adminOnly: true,
-            aliases: ['boom'],
-            command: 'remove',
+            aliases: ['deathnote'],
+            command: 'removethismf',
             description: 'removes the mentioned users',
             category: 'moderation',
             usage: `${client.config.prefix}remove [@mention | tag]`,
@@ -32,7 +32,7 @@ export default class Command extends BaseCommand {
             else if (this.client.user.jid === user) {
                 text += `✖ Skipped *@${user.split('@')[0]}* as they're me.\n`
             } else {
-                text += `🟥 Removed *@${user.split('@')[0]}*\n`
+                text += `🟥 Removed this mf *@${user.split('@')[0]}*\n`
                 await this.client.groupRemove(M.from, [user])
             }
         })
