@@ -6,12 +6,12 @@ import { MessageType, Mimetype } from "@adiwajshing/baileys";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
-      command: "help",
+      command: "yagami-help",
       description:
         "Displays the help menu or shows the info of the command provided",
       category: "general",
       usage: `${client.config.prefix}help (command_name)`,
-      aliases: ["h"],
+      aliases: ["yh"],
       baseXp: 30,
     });
   }
@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
       }
       let text = `👋🏻 (💙ω💙) Konichiwa! *@${
         user.split("@")[0]
-      }*, I'm Chitoge.\n\nMy prefix is - "${
+      }*, I'm ＬＩＧＨＴＹＡＧＡＭＩ.\n\nMy prefix is - "${
         this.client.config.prefix
       }"\n\nThe usable commands are listed below.\n\n`;
       const keys = Object.keys(categories);
