@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "hi",
+			command: "hilight",
 			description: "Generally used to check if bot is Up",
 			category: "general",
 			usage: `${client.config.prefix}hi`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://media.tenor.com/videos/8a6408675b1f806290aaac4b939c5a98/mp4";
+			"https://c.tenor.com/2vaQy0JsCuMAAAPo/death-note.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `I don't have time to have a conversation with someone like you. Use something from *${this.client.config.prefix}help* list if you want anything. \n`,
+				caption: `★彡[ᴄᴀɴ ɪ ʜᴀᴠᴇ ʏᴏᴜʀ ᴀᴜᴛᴏɢʀᴀᴘʜ? ᴍʏ ɴᴀᴍᴇ ɪꜱ ʟɪɢʜᴛ ʏᴀɢᴀᴍɪ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʟᴏʀᴅ ᴀᴋᴀꜱʜɪ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛʜᴇɴ ᴛʏᴘʀ "?ᴍᴏᴅꜱ" ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴍᴀꜱᴛᴇʀ.]彡★ *${this.client.config.prefix}help* list if you want anything. \n`,
 			}
 		);
 	};
