@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `🌟 *ＬＩＧＨＴ�ＹＡＧＡＭＩ* 🌟\n\n🍀 *Description: A WhatsApp Bot With Rich Anime Features by akashi if you wanna add me in your group type "?mods" and contact my boss.*\n\n🌐 *URL: https://github.com/namiakze/Light-Yagami* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n`,
+				caption: `👹 *ＬＩＧＨＴ�ＹＡＧＡＭＩ* 👹\n\n🍀 *Description: A WhatsApp Bot With Rich Anime Features by akashi if you wanna add me in your group type "?mods" and contact my boss.*\n\n🌐 *URL: https://github.com/namiakze/Light-Yagami* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n`,
 			}
 		);
 	};
