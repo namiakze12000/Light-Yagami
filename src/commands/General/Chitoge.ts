@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "chitoge",
+			command: "Light",
 			description: "Displays the info",
 			category: "general",
 			usage: `${client.config.prefix}chitoge`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://media.tenor.com/videos/80f557139bc3a0857f6a705da6990fdc/mp4";
+			"https://c.tenor.com/H37ktE73aVkAAAPo/loufy42-light.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `🌟 *Chitoge* 🌟\n\n🍀 *Description: A WhatsApp Bot With Rich Anime Features.*\n\n🌐 *URL: https://github.com/ShineiIchijo/Chitoge* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n`,
+				caption: `🌟 *ＬＩＧＨＴ�ＹＡＧＡＭＩ* 🌟\n\n🍀 *Description: A WhatsApp Bot With Rich Anime Features by akashi if you wanna add me in your group type "?mods" and contact my boss.*\n\n🌐 *URL: https://github.com/namiakze/Light-Yagami* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n`,
 			}
 		);
 	};
