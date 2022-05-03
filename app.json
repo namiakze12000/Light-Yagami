@@ -1,6 +1,6 @@
 {
-  "name": "Chitoge",
-  "description": "A WhatsApp Bot With Rich Anime Features. ",
+  "name": "ＬＩＧＨＴ�ＹＡＧＡＭＩ",
+  "description": "A WhatsApp Bot With Rich Anime Features made by lord akashi sama. ",
   "keywords": [
     "bot",
     "whatsapp",
@@ -13,7 +13,7 @@
   ],
   "website": "https://github.com/ShinNouzen/Chitoge#readme",
   "repository": "https://github.com/ShinNouzen/Chitoge.git",
-  "logo": "https://wallpapermemory.com/uploads/711/chitoge-kirisaki-wallpaper-full-hd-323316.jpg",
+  "logo": "https://wallpaperaccess.com/full/862638.jpg",
   "success_url": "/",
   "env": {
     "PREFIX": {
