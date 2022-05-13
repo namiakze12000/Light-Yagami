@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `★彡[ᴄᴀɴ ɪ ʜᴀᴠᴇ ʏᴏᴜʀ ᴀᴜᴛᴏɢʀᴀᴘʜ? ᴍʏ ɴᴀᴍᴇ ɪꜱ ʟɪɢʜᴛ ʏᴀɢᴀᴍɪ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʟᴏʀᴅ ᴀᴋᴀꜱʜɪ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛʜᴇɴ ᴛʏᴘʀ "?ᴍᴏᴅꜱ" ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴍᴀꜱᴛᴇʀ.]彡★ *${this.client.config.prefix}help* list if you want anything. \n`,
+				caption: `★彡[ᴄᴀɴ ɪ ʜᴀᴠᴇ ʏᴏᴜʀ ᴀᴜᴛᴏɢʀᴀᴘʜ? ᴍʏ ɴᴀᴍᴇ ɪꜱ ʟɪɢʜᴛ ʏᴀɢᴀᴍɪ ᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʟᴏʀᴅ ᴀᴋᴀꜱʜɪ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛʜᴇɴ ᴛʏᴘᴇ "?ᴍᴏᴅꜱ" ᴀɴᴅ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴍᴀꜱᴛᴇʀ.]彡★ *${this.client.config.prefix}help* list if you want anything. \n`,
 			}
 		);
 	};
