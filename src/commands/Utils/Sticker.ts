@@ -80,8 +80,8 @@ export default class Command extends BaseCommand {
 					})();
 					return {
 						categories,
-						pack: pack[1] || "🌟 Here you go ",
-						author: pack[2] || "Chitoge 🌟",
+						pack: pack[1] || " 😁  Here you go ",
+						author: pack[2] || "ＬＩＧＨＴ�ＹＡＧＡＭＩ 👾",
 						quality,
 						type: StickerTypes[
 							parsedArgs.flags.includes("--crop") ||
@@ -102,7 +102,7 @@ export default class Command extends BaseCommand {
 				const sticker = await new Sticker(buffer, getOptions())
 					.build()
 					.catch(() => null);
-				if (!sticker) return void M.reply(`An Error Occurred While Converting`);
+				if (!sticker) return void M.reply(`Sorry An Error Occurred While Converting`);
         await M.reply(sticker, MessageType.sticker, Mimetype.webp)
     }
 }
