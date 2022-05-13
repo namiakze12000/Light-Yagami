@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
 		} catch (err) {
 			M.reply(`Profile Picture not Accessible of ${username}`);
 			pfp =
-				"https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg";
+				"https://c4.wallpaperflare.com/wallpaper/254/971/831/anime-death-note-kira-death-note-l-death-note-wallpaper-preview.jpg";
 		}
 		const exp = (await this.client.getUser(user)).Xp;
 		let role: string;
