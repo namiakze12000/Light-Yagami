@@ -27,7 +27,7 @@ export default class EventHandler {
 			pfp = await this.client.getProfilePicture(user);
 		} catch (err) {
 			pfp =
-				"https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg";
+				"https://c4.wallpaperflare.com/wallpaper/254/971/831/anime-death-note-kira-death-note-l-death-note-wallpaper-preview.jpg";
 		}
 		console.log(event.action);
 		const groupData = await this.client.groupMetadata(event.jid);
@@ -37,7 +37,7 @@ export default class EventHandler {
 		const promote = event.action === "promote";
 		const demote = event.action === "demote";
 		/*const text = add
-			? `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+			? `- ${group.subject || "___"} -\n\n👺 *Group Description:*\n${
 					group.desc
 			  }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
 					.map((jid) => `@${jid.split("@")[0]}`)
@@ -72,14 +72,14 @@ export default class EventHandler {
 				.setText("member-count", `- ${memberCount} member !`)
 				.setText("title", "hello")
 				.setText("message", `welcome to ${group.subject}`)
-				.setBackground("https://i.ibb.co/8B6Q84n/LTqHsfYS.jpg")
+				.setBackground("https://i.imgur.com/8lmnuOf.jpeg")
 				.toAttachment();
 			return void (await this.client.sendMessage(
 				event.jid,
 				welcome.toBuffer(),
 				MessageType.image,
 				{
-					caption: `- ${group.subject || "___"} -\n\n💠 *Group Description:*\n${
+					caption: `- ${group.subject || "___"} -\n\n👺 *Group Description:*\n${
 						group.desc
 					}\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
 						.map((jid) => `@${jid.split("@")[0]}`)
@@ -112,17 +112,17 @@ export default class EventHandler {
 				goodbye.toBuffer(),
 				MessageType.image,
 				{
-					caption: `Goodbye *@${
+					caption: `Goodbye asshole *@${
 						event.participants[0].split("@")[0]
-					}* 👋🏻, we're probably not gonna miss you.`,
+					}* 👋🏻, who will I make fun of now? Bye!.`,
 					contextInfo,
 				}
 			));
 		}
 		if (promote) {
-			const text = `Congratulations *@${
+			const text = `Congratulations Bro *@${
 				event.participants[0].split("@")[0]
-			}*, you're now an admin.`;
+			}*, you're now an admin, i am happy for u (not a bit).`;
 			return void this.client.sendMessage(
 				event.jid,
 				text,
@@ -131,9 +131,9 @@ export default class EventHandler {
 			);
 		}
 		if (demote) {
-			const text = `Ara Ara looks like *@${
+			const text = `BRUH looks like *@${
 				event.participants[0].split("@")[0]
-			}* got demoted.`;
+			}* got demoted🤣🤣.`;
 			return void this.client.sendMessage(
 				event.jid,
 				text,
