@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
 					return void M.reply(
-						`How can I promote someone without being an admin?`
+						`Is there any way that you've invented,to remove somone without being an admin?`
 					);
 				if (M.quoted?.sender) M.mentioned.push(M.quoted.sender);
 				if (!M.mentioned.length)
@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
             if (M.groupMetadata?.admins?.includes(user)) M.reply(`✖ Skipped *${username}* as they're already an admin`)
             else {
                 await this.client.groupMakeAdmin(M.from, [user])
-                M.reply(`👑 Successfully Promoted *${username}*`)
+                M.reply(`👺 Successfully Promoted Muhahahahhaha *${username}*`)
             }
         })
     }
